@@ -41,13 +41,13 @@
 and transactions.market_code="Mark001";`
 
 
-Data Analysis Using Power BI
+### Data Analysis Using Power BI
 ============================
 
 1. Formula to create norm_amount column
 
 `= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
 
-## Result :
+### Result :
 Live demonstration of the dashboard :
 https://drive.google.com/file/d/1j7btX9XBJxBwpkY2oWg3I35_J4x9dlgB/view?usp=share_link
